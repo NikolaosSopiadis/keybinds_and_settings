@@ -70,4 +70,16 @@
   //   "key": "ctrl+z",
   //   "command": "workbench.action.toggleZenMode" 
   // }
+
+  // multiple cursors
+  {
+        "key": "ctrl+alt+j",
+        "command": "editor.action.insertCursorBelow",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+alt+k",
+        "command": "editor.action.insertCursorAbove",
+        "when": "editorTextFocus"
+    }
 ]  
