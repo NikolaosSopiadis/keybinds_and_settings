@@ -60,7 +60,6 @@
     "key": "d",
     "when": "filesExplorerFocus && !inputFocus"
   },
-
   // EXTRA
   // {
   //   "key": "ctrl+shift+5",
@@ -70,16 +69,20 @@
   //   "key": "ctrl+z",
   //   "command": "workbench.action.toggleZenMode" 
   // }
-
   // multiple cursors
   {
-        "key": "ctrl+alt+j",
-        "command": "editor.action.insertCursorBelow",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+alt+k",
-        "command": "editor.action.insertCursorAbove",
-        "when": "editorTextFocus"
-    }
-]  
+    "key": "ctrl+alt+j",
+    "command": "editor.action.insertCursorBelow",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+alt+k",
+    "command": "editor.action.insertCursorAbove",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+d",
+    "command": "editor.action.addSelectionToNextFindMatch",
+    "when": "editorTextFocus"
+  }
+]
