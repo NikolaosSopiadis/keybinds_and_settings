@@ -2,14 +2,14 @@
 # read second
 
 ### Source aliases ###
-[ -f "$HOME/.zsh_aliases" ] && source "$HOME/.zsh_aliases"
+[ -f "$XDG_CONFIG_HOME/zsh/.zsh_aliases" ] && source "$XDG_CONFIG_HOME/zsh/.zsh_aliases"
 
 ### Load modules ###
 autoload -U compinit && compinit # zsh auto-complete
 autoload -U colors && colors
 #autoload -U tetriscurses && tetriscurses
 
-#zstyle :compinstall filename '/home/nick/.zshrc'
+#zstyle :compinstall filename '/home/nick/.zshrc' # generated automatically by zsh installer
 
 ### Auto completion ###
 # main opts
@@ -30,7 +30,8 @@ stty stop undef # disable ctrl+s (freeze screen)
 # history opts
 setopt hist_ignore_dups
 setopt append_history inc_append_history share_history
-HISTFILE=~/.histfile
+HISTFILE="$XDG_CACH_HOME/zsh_history"
+ZSH_COMPDUMP="$XDG_CACHE_HOME/.zcompdump"
 HISTSIZE=1000000
 SAVEHIST=1000000
 
