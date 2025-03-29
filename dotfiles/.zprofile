@@ -22,6 +22,9 @@ export XDG_STATE_HOME="$HOME/.local/state"
 # any other config files can also reside here
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 
+### vim ###
+export VIMINIT="$XDG_CONFIG_HOME/vim/.vimrc"
+
 ### history files ###
 export LESSHISTFILE="$XDG_CACHE_HOME/less_history"
 export PYTHON_HISTORY="$XDG_CACHE_HOME/python/history"
