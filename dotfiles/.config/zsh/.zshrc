@@ -30,8 +30,8 @@ stty stop undef # disable ctrl+s (freeze screen)
 # history opts
 setopt hist_ignore_dups
 setopt append_history inc_append_history share_history
-HISTFILE="$XDG_CACH_HOME/zsh_history"
-ZSH_COMPDUMP="$XDG_CACHE_HOME/.zcompdump"
+HISTFILE="$XDG_CACHE_HOME/zsh/zsh_history"
+ZSH_COMPDUMP="$XDG_CACHE_HOME/zsh/.zcompdump"
 HISTSIZE=1000000
 SAVEHIST=1000000
 
