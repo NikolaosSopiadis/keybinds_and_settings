@@ -23,7 +23,8 @@ export XDG_STATE_HOME="$HOME/.local/state"
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 
 ### vim ###
-export VIMINIT="$XDG_CONFIG_HOME/vim/.vimrc"
+export MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc"
+#export VIMINIT="source $XDG_CONFIG_HOME/vim/.vimrc" # doesn't work
 
 ### history files ###
 export LESSHISTFILE="$XDG_CACHE_HOME/less_history"

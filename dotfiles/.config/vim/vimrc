@@ -1,13 +1,10 @@
-
-
 """ Change .viminfo location """
 set viminfo+=n{expand('$XDG_CONFIG_HOME')}/vim/.viminfo
+"set viminfo+=n$XDG_CONFIG_HOME/vim/.viminfo
 
 """ Change .netrwhist location """
-" I just need to specify the file path, the name (.netrwhist) gets appended at
-" the end
+" I just need to specify the file path, the name (.netrwhist) gets appended at the end
 let g:netrw_home = expand('$XDG_CONFIG_HOME') . '/vim'
-
 
 "========================================
 " General Settings
@@ -21,7 +18,6 @@ set fileformats=unix,dos    " Use Unix line endings by default
 "========================================
 set number                  " Show line numbers
 set relativenumber          " Show relative line numbers
-" I see that others that use nocursorline and nocursorcolumn
 set cursorline              " Highlight the current line
 set showcmd                 " Show command in the bottom right
 set ruler                   " Show the cursor position
@@ -55,41 +51,50 @@ nnoremap <silent> <leader>/ :nohlsearch<CR> " Clear search with <Leader>/
 "========================================
 " Backup, Undo & Swap Files
 "========================================
-set undofile                " Enable persistent undo
-"set undodir=~/.config/vim/undo " Store undo history in a custom directory
-set undodir={expand('$XDG_CONFIG_HOME')}/vim/undo
-set backup                  " Enable backup files
-set backupdir={expand('$XDG_CONFIG_HOME')}/vim/backup " Set backup directory
-set swapfile                " Enable swap files
-set directory={expand('$XDG_CONFIG_HOME')}/vim/swap " Set swap file directory
 
-" Create necessary directories if they don't exist
-if !isdirectory(expand("~/.config/vim/undo"))
-    call mkdir(expand("~/.config/vim/undo"), "p")
-endif
-if !isdirectory(expand("~/.config/vim/backup"))
-    call mkdir(expand("~/.config/vim/backup"), "p")
-endif
-if !isdirectory(expand("~/.config/vim/swap"))
-    call mkdir(expand("~/.config/vim/swap"), "p")
-endif
+" At this point i am unable to get the directories to work in vim
+set noswapfile
+set nobackup
+set nowritebackup
+
+" Save on focus out
+au FocusLost * :wa
+
+"set undofile                " Enable persistent undo
+"set undodir={expand('$XDG_CONFIG_HOME')}/vim/undo " Store undo history in a custom directory
+"set backup                  " Enable backup files
+"set backupdir={expand('$XDG_CONFIG_HOME')}/vim/backup " Set backup directory
+"set swapfile                " Enable swap files
+"set directory={expand('$XDG_CONFIG_HOME')}/vim/swap " Set swap file directory
+"
+"" Create necessary directories if they don't exist
+"if !isdirectory(expand('$XDG_CONFIG_HOME') . '/vim/undo')
+"    call mkdir(expand('$XDG_CONFIG_HOME') . '/vim/undo', "p")
+"endif
+"if !isdirectory(expand('$XDG_CONFIG_HOME') . '/vim/backup')
+"    call mkdir(expand('$XDG_CONFIG_HOME')/vim/backup, "p")
+"endif
+"if !isdirectory(expand('$XDG_CONFIG_HOME') . '/vim/swap')
+"    call mkdir(expand('$XDG_CONFIG_HOME')/vim/swap, "p")
+"endif
 
 "========================================
 " Clipboard & Mouse
 "========================================
-set clipboard=unnamedplus   " Use system clipboard
+set clipboard+=unnamedplus   " Use system clipboard
 set mouse=a                 " Enable mouse support
 
 "========================================
 " Status Line & Theme
 "========================================
 set termguicolors           " Enable true colors (if terminal supports it)
-colorscheme desert          " Change this to your preferred theme
+"colorscheme retrobox          " Change this to your preferred theme
+colorscheme sorbet
+syntax on                   " Enable syntax highlighting
 
 "========================================
 " File Navigation
 "========================================
-let g:netrw_home = expand('$XDG_CONFIG_HOME') . '/vim' " Move .netrwhist
 let g:netrw_banner=0        " Hide banner in netrw
 let g:netrw_liststyle=3     " Tree-style file explorer
 let g:netrw_winsize=25      " Set netrw window size
