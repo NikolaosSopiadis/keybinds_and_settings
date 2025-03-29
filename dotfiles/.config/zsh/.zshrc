@@ -68,7 +68,7 @@ zstyle ':completion:*' verbose yes
 bindkey -v # use vim style navigation
 
 ### fzf setup ###
-
+source <(fzf --zsh) # allow for fzf history widget
 
 ### keybinds ###
 
