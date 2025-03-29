@@ -3,3 +3,4 @@ alias la='ls -lah --color=auto --group-directories-first'
 
 alias grep='grep --color=auto'
 
+alias cat='lolcat'
