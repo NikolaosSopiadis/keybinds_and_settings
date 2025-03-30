@@ -22,6 +22,19 @@ export XDG_STATE_HOME="$HOME/.local/state"
 # any other config files can also reside here
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 
+### hyprland ###
+export WLR_NO_HARDWARE_CURSORS=1
+export GBM_BACKEND=nvidia-drm
+export __GLX_VENDOR_LIBRARY_NAME=nvidia
+#export XDG_SESSION_TYPE=wayland
+#export XDG_CURRENT_DESKTOP=Hyprland
+#export QT_QPA_PLATFORM=wayland
+#export SDL_VIDEODRIVER=wayland
+#export CLUTTER_BACKEND=wayland
+#export MOZ_ENABLE_WAYLAND=1
+#export NVD_BACKEND=direct
+
+
 ### vim ###
 export MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc"
 #export VIMINIT="source $XDG_CONFIG_HOME/vim/.vimrc" # doesn't work
