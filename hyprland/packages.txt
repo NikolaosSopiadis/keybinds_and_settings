@@ -30,7 +30,8 @@ uwsm
 #hyprland-qtutils
 
 waybar
-#rofi-wayland
+##rofi-wayland
+wofi
 #waypaper
 webcord # discrod with hyprland support
 
