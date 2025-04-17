@@ -1,0 +1,30 @@
+{
+    // Workspaces
+    "hyprland/workspaces" : 
+    {
+        "disable-scroll": true,
+        // "wrap-on-scroll": false,
+        // "active-only": false,
+        // "all-outputs": true,
+        "format": "{icon}",
+        "format-icons": 
+        {
+            "urgent": "",
+            "active": "",
+            "default": ""
+        },
+        "persistent-workspaces": 
+        {
+            "*": 5
+        }       
+    },
+
+    "hyprland/submap": 
+    {
+        "format": "{}",
+        "max-length": 30,
+        "tooltip": false
+    } 
+
+}
+

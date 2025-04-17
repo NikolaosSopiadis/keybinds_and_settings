@@ -67,11 +67,14 @@ KEYMAP=gr
 FONT=iso07.16
 ```
 
+``` txt
 ******************
-\* /\            *
-\*  |  WARNING!  *
-\*  |            *
+* /\            *
+*  |  WARNING!  *
+*  |            *
 ******************
+```
+
 The above font does not get recognnised when creating initramfs with `sudo mkinitcpio -P`
 It can safely be omitted.
 
@@ -97,6 +100,7 @@ Configure GRUB
 
 ```
 
+grub-mount has "fuse3" as an optional dependancy and it is needed for os-prober to work. `sudo pacman -S fuse3`
 Enable os-prober: `sudo vim /etc/default/grub` and uncomment `GRUB_DISABLE_OS_PROBER=false`
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 

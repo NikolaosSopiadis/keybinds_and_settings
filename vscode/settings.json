@@ -187,6 +187,9 @@
   {
     "<C-p>": false, // disable ctrl + p vim shortcut (it is used by vscode to open a file)      
     "<C-c>": false, // disable ctrl + c vim shortcut so copy can work
-    "<C-v>": false // disable ctrl + v vim shortcut so paste can work
-  }
+    "<C-v>": false, // disable ctrl + v vim shortcut so paste can work
+    "<C-k>": false  // disable ctrl + k vim shortcut so vscode chords can work (eg ctrl k ctrl o)
+  },
+  "git.suggestSmartCommit": false,
+  "markdown-preview-enhanced.previewTheme": "github-dark.css"
 }
