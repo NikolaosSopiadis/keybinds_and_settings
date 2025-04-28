@@ -49,7 +49,7 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 #zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={{A-Za-z}' # enable partial-word completion (gc -> git commit)
 
 # expand hidden dirs and hidden files
-zstyle ':completion:*' special-dirs true # force . and .. to appear in cmp menu
+#zstyle ':completion:*' special-dirs true # force . and .. to appear in cmp menu
 #zstyle ':completion:*' fle-patterns '%p:globbed-files' '*:all-fles' # show dotfiles noly when explicitly typed
 #zstyle ':completion:*' file-patterns '*' # always show dotfiles
 
