@@ -44,7 +44,7 @@ export LESSHISTFILE="$XDG_CACHE_HOME/less_history"
 export PYTHON_HISTORY="$XDG_CACHE_HOME/python/history"
 
 ### add scripts ###
-#export PATH="$XDG_CONFIG_HOME/scripts:$PATH"
+export PATH="$XDG_CONFIG_HOME/scripts:$PATH"
 
 ### fzf ###
 export FZF_DEFAULT_OPTS="--style minimal --color 16 --layout=reverse --height 30% --preview='bat -p --color=always {}'"
