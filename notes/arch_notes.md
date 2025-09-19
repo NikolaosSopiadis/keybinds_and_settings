@@ -161,3 +161,9 @@ to start plasma from terminal `startplasma-wayland`
 # h1 post install
 
 install aur helper "yay"
+
+enable this systemd service to fix instant wakeup from suspend, caused on some Gigabyte motherboards
+```zsh
+sudo systemctl enable wakeup-disable-GPP0.service
+sudo systemctl start wakeup-disable-GPP0.service
+```
