@@ -167,3 +167,12 @@ enable this systemd service to fix instant wakeup from suspend, caused on some G
 sudo systemctl enable wakeup-disable-GPP0.service
 sudo systemctl start wakeup-disable-GPP0.service
 ```
+
+install and enable gnome keyring. Then follow arch wiki.
+```zsh
+sudo pacman -S gnome-keyring
+```
+
+to fix vscode "An OS keyring couldn't be identified for storing the encryption related data in your current desktop environment" add `"password-store": "gnome"` to `~/.vscode/argv.json`
+
+
