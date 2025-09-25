@@ -22,6 +22,14 @@ fi
 while hyprctl -j monitors >/dev/null 2>&1; do
 
     "$HOME/scripts/change_wallpaper.sh"
+
+    # if multiple instances of waybar running sumultaneously, then kill them all and keep a single one
+    COUNT="$(pgrep -x waybar | wc -l || true)"
+    if (( COUNT > 1 )); then
+        killall waybar
+        sleep 0.2
+        waybar
+    fi
     
     sleep "$INTERVAL" || break
 done
