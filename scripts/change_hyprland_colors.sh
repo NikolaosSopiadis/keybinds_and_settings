@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+# TODO: update this junky script to use wal/colors-hyprland.conf
+# Or better yet, remove it entirely and simply change the border colors directly in hyprland.conf
+
 j="$HOME/.cache/wal/colors.json"
 [ -f "$j" ] || exit 0
 
