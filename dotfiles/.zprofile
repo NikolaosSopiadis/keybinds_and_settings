@@ -10,7 +10,7 @@ export TERM="kitty"
 export TERMINAL="kitty"
 #export MUSPLAYER=
 export BROWSER="librewolf"
-#export DIISPLAY=:0 # useful for some scripts
+#export DISPLAY=:0 # useful for some scripts
 
 ### XDG ### 
 export XDG_CONFIG_HOME="$HOME/.config"
@@ -34,6 +34,9 @@ export __GLX_VENDOR_LIBRARY_NAME=nvidia
 #export MOZ_ENABLE_WAYLAND=1
 #export NVD_BACKEND=direct
 
+### make ###
+# make will use all threads (faster compilation) except one (system stability)
+export MAKEFLAGS="-j$(($(nproc)-1))"
 
 ### vim ###
 export MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc"
@@ -44,7 +47,7 @@ export LESSHISTFILE="$XDG_CACHE_HOME/less_history"
 export PYTHON_HISTORY="$XDG_CACHE_HOME/python/history"
 
 ### add scripts ###
-export PATH="$XDG_CONFIG_HOME/scripts:$PATH"
+export PATH="$HOME/scripts:$PATH"
 
 ### fzf ###
 export FZF_DEFAULT_OPTS="--style minimal --color 16 --layout=reverse --height 30% --preview='bat -p --color=always {}'"

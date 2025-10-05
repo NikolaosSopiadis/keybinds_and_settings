@@ -11,6 +11,6 @@ hyprctl hyprpaper reload ,"$WALLPAPER"
 
 # Change color scheme with pywal
 wal -i "$WALLPAPER" --cols16 lighten --saturate 0.20
-## Change hyprland colors ##
 
+# Change hyprland colors ##
 "$HOME/scripts/change_hyprland_colors.sh"
