@@ -3,7 +3,16 @@
 GRUB_DEFAULT=saved
 GRUB_TIMEOUT=5
 GRUB_DISTRIBUTOR="Arch"
-GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet nvidia-drm.modeset=1 nvidia-drm.fbdev=1 lsm=landlock,lockdown,yama,integrity,apparmor,bpf"
+GRUB_CMDLINE_LINUX_DEFAULT="loglevel=3 quiet nvidia-drm.modeset=1 nvidia-drm.fbdev=1 lsm=landlock,lockdown,yama,integrity,apparmor,bpf slab_nomerge page_alloc.shuffle=1 randomize_kstack_offset=on debugfs=off"
+# Kernel boot parameters explained
+# - loglevel=3 quiet
+# 	: Default
+# - nvidia-drm.modeset=1 nvidia-drm.fbdev=1
+# 	: Better wayland support on nvidia gpu
+# - lsm=landlock,lockdown,yama,integrity,apparmor,bpf
+# 	: AppArmor
+# - slab_nomerge page_alloc.shuffle=1 randomize_kstack_offset=on debugfs=off
+# 	: Security hardening
 GRUB_CMDLINE_LINUX=""
 
 # Preload both GPT and MBR modules so that they are not missed
