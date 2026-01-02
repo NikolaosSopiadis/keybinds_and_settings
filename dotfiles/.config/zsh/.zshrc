@@ -9,13 +9,6 @@
 ### Source aliases ###
 [ -f "$XDG_CONFIG_HOME/zsh/.zsh_aliases" ] && source "$XDG_CONFIG_HOME/zsh/.zsh_aliases"
 
-### Load modules ###
-autoload -U compinit && compinit # zsh auto-complete
-autoload -U colors && colors
-#autoload -U tetriscurses && tetriscurses
-
-#zstyle :compinstall filename '/home/nick/.zshrc' # generated automatically by zsh installer
-
 ### Auto completion ###
 # main opts
 setopt auto_menu menu_complete # autocmp first menu match
@@ -80,8 +73,15 @@ source <(fzf --zsh) # allow for fzf history widget
 
 
 ### prompt ###
-PROMPT="%F{cyan}$(date +%_I:%M%P) %F{green}%n@%m%f:%F{blue}%~ %# "
+PROMPT='%F{cyan}%D{%I:%M%p} %F{green}%n@%m%f:%F{blue}%~ %# '
 neofetch
+
+### Load modules ###
+autoload -U compinit && compinit # zsh auto-complete
+autoload -U colors && colors
+#autoload -U tetriscurses && tetriscurses
+
+#zstyle :compinstall filename '/home/nick/.zshrc' # generated automatically by zsh installer
 
 ### autosuggestions ###
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
