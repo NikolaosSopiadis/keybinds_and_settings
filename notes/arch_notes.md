@@ -175,4 +175,6 @@ sudo pacman -S gnome-keyring
 
 to fix vscode "An OS keyring couldn't be identified for storing the encryption related data in your current desktop environment" add `"password-store": "gnome"` to `~/.vscode/argv.json`
 
+## Secure boot
 
+Use `sbctl` for secure boot and `efitools` to back up the existing keys. I also need to disable shim lock on grub.
