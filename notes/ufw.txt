@@ -1,0 +1,18 @@
+# This is a list with the recommended ufw rules
+
+# Limit but not disable ssh
+sudo ufw limit 22
+
+# Allow http and https
+sudo ufw allow 80
+sudo ufw allow 443
+
+# Default deny all incoming trafic
+sudo ufw default deny incoming
+
+# Default allow all outgoing trafic
+sudo ufw default allow outgoing
+
+# Enable ufw
+sudo ufw enable
+

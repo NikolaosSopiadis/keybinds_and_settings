@@ -178,3 +178,7 @@ to fix vscode "An OS keyring couldn't be identified for storing the encryption r
 ## Secure boot
 
 Use `sbctl` for secure boot and `efitools` to back up the existing keys. I also need to disable shim lock on grub.
+
+## Firewall
+
+Two pieces of software will be used: `ufw` as the firewall and `fail2ban` as an anti-probe mechanism
