@@ -1,0 +1,12 @@
+[DEFAULT]
+ignoreip  = 127.0.0.1/8 ::1 192.168.0.0/16 10.0.0.0/8 172.16.0.0/12
+bantime   = 1h
+findtime  = 10m
+maxretry  = 5
+backend   = systemd
+banaction = ufw
+
+[sshd]
+enabled = true
+journalmatch = _SYSTEMD_UNIT=sshd.service
+mode = aggressive
