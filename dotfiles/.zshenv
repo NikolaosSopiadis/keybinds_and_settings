@@ -3,9 +3,10 @@
 ### Default programs ###
 export EDITOR="vim"
 export TERMINAL="kitty"
-#export MUSPLAYER=
+export TERM="xterm-256color"
+export MUSPLAYER="vlc"
 export BROWSER="librewolf"
-#export DISPLAY=:0 # useful for some scripts
+export DISPLAY=:0 # useful for some scripts
 
 ### XDG ### 
 export XDG_CONFIG_HOME="$HOME/.config"
