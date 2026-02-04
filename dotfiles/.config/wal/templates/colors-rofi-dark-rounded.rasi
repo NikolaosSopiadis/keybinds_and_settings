@@ -27,7 +27,7 @@
     border-color-visible: {color4};
     spacing: 2;
 
-    font: "0xProto Nerd Font 12";
+    font: "0xProto Nerd Font Mono 12";
 }}
 
 #window {{
