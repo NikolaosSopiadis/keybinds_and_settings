@@ -8,4 +8,4 @@
 - grub customization
 - gnome customiization (?)
 - discord keybinids (mute & deafen)
-
+- create a script that shows brightness and audio volume using dunstify (or notify-send)
