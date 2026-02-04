@@ -1,4 +1,5 @@
 alias ls='ls -h --color=auto --group-directories-first'
+alias ll='ls -lh --color=auto --group-directories-first'
 alias la='ls -lah --color=auto --group-directories-first'
 
 alias grep='grep --color=auto'
