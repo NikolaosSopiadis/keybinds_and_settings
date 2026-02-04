@@ -97,7 +97,7 @@
         "format": "󰂯",
         "format-disabled": "󰂲",
         "format-off": "󰂲",
-        "format-connected": "󰂱",
+        "format-connected": "󰂱 ",
         "format-no-controller": "No Bluetooth",
         "formal-connected-battery" : "󰥉 {device_battery_percentage}%",
         "on-click": "blueman-manager",
@@ -131,7 +131,7 @@
         "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": " {format_source}",
         "format-source": "{volume}% ",
-        "format-source-muted": "",
+        "format-source-muted": " ",
         "format-icons": 
         {
             "headphone": "",
@@ -140,7 +140,7 @@
             "phone": "",
             "portable": "",
             "car": "",
-            "default": ["", "", ""]
+            "default": [" ", " ", " "]
         },
         "on-click": "pavucontrol"
     },
