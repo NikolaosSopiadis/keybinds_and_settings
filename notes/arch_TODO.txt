@@ -6,4 +6,6 @@
     - make AppArmor violation notifications have critical urgency
 - grub customization
 - gnome customiization (?)
-- discord keybinids (mute & deafen)
+- hyprland: add more layouts, for example:
+    - just columns
+    - a grid with equal-size windows
