@@ -1,4 +1,3 @@
-- default apps
 - AppArmor: add policies
 - ufw (uncomplicated firewall):
     - create a script that monitors logs and sends notification on violation
@@ -8,4 +7,3 @@
 - grub customization
 - gnome customiization (?)
 - discord keybinids (mute & deafen)
-- create a script that shows brightness and audio volume using dunstify (or notify-send)
