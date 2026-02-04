@@ -25,7 +25,7 @@
     # dynamic width from 0 to 300
     # width = (0, 300)
     # constant width of 300
-    width = (100, 300)
+    width = (100, 400)
 
     # The height of a single notification, excluding the frame.
     # dynamic height from 0 to 300
@@ -77,7 +77,7 @@
 	progress_bar_corners = bottom-left, top-right
 
     # Corner radius for the icon image.
-    icon_corner_radius = 0
+    icon_corner_radius = 10
 
     # Define which corners to round when drawing the icon image. If icon_corner_radius
     # is set to 0 this option will be ignored.
