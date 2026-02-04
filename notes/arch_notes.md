@@ -175,6 +175,24 @@ sudo pacman -S gnome-keyring
 
 to fix vscode "An OS keyring couldn't be identified for storing the encryption related data in your current desktop environment" add `"password-store": "gnome"` to `~/.vscode/argv.json`
 
+## dolphin not using default apps (mimeapps)
+
+I have placed the following in a script called `update_dolphin_cache.sh`. It should be run whenever there is any change in .desktop files or default apps.
+
+The following nukes kde's menu, service, and application cache and creates it from scratch.
+```
+rm -f ~/.cache/ksycoca6_*
+kbuildsycoca6 --noincremental 
+update-desktop-database ~/.local/share/applications 
+sudo update-desktop-database /usr/share/applications
+```
+
+If `kbuildsycoca6 --noincremental` returns `"applications.menu" not found in QList("/etc/xdg/menus"), then symlink plasma-applications.menu to it and rerun the above commands.
+
+```
+sudo ln -sf /etc/xdg/menus/plasma-applications.menu /etc/xdg/menus/applications.menu
+```
+
 ## Secure boot
 
 Use `sbctl` for secure boot and `efitools` to back up the existing keys. I also need to disable shim lock on grub.

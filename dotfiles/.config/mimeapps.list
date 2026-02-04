@@ -1,0 +1,112 @@
+[Default Applications]
+
+# --- Web / URLs ---
+x-scheme-handler/http=librewolf.desktop;
+x-scheme-handler/https=librewolf.desktop;
+text/html=librewolf.desktop;
+
+# --- Email ---
+x-scheme-handler/mailto=userapp-Thunderbird-FPK332.desktop;
+x-scheme-handler/mid=userapp-Thunderbird-FPK332.desktop;
+message/rfc822=userapp-Thunderbird-FPK332.desktop;
+
+# --- File manager ---
+inode/directory=org.kde.dolphin.desktop;
+
+# --- Text / code ---
+text/plain=code.desktop;
+application/json=code.desktop;
+application/x-docbook+xml=code.desktop;
+
+# --- PDFs ---
+application/pdf=librewolf.desktop;
+
+# --- Images ---
+image/png=org.kde.gwenview.desktop;
+image/jpeg=org.kde.gwenview.desktop;
+image/jpg=org.kde.gwenview.desktop;
+image/webp=org.kde.gwenview.desktop;
+image/gif=org.kde.gwenview.desktop;
+image/tiff=org.kde.gwenview.desktop;
+
+# --- Video ---
+video/mp4=vlc.desktop;
+video/x-matroska=vlc.desktop;
+video/webm=vlc.desktop;
+video/quicktime=vlc.desktop;
+
+# --- Audio ---
+audio/mpeg=vlc.desktop;
+audio/flac=vlc.desktop;
+audio/ogg=vlc.desktop;
+audio/wav=vlc.desktop;
+audio/mp4=vlc.desktop;
+
+# --- Archives ---
+application/zip=xarchiver.desktop;
+application/x-zip-compressed=xarchiver.desktop;
+application/x-tar=xarchiver.desktop;
+application/gzip=xarchiver.desktop;
+application/x-7z-compressed=xarchiver.desktop;
+application/vnd.rar=xarchiver.desktop;
+
+# --- Github Desktop ---
+x-scheme-handler/x-github-client=github-desktop.desktop
+x-scheme-handler/x-github-desktop-auth=github-desktop.desktop
+
+[Added Associations]
+
+# --- Web / URLs ---
+x-scheme-handler/http=librewolf.desktop;
+x-scheme-handler/https=librewolf.desktop;
+text/html=librewolf.desktop;
+
+# --- Email ---
+x-scheme-handler/mailto=userapp-Thunderbird-FPK332.desktop;
+x-scheme-handler/mid=userapp-Thunderbird-FPK332.desktop;
+message/rfc822=userapp-Thunderbird-FPK332.desktop;
+
+# --- File manager ---
+inode/directory=org.kde.dolphin.desktop;yazi.desktop
+
+# --- Text / code ---
+text/plain=code.desktop;
+application/json=code.desktop;
+application/x-docbook+xml=code.desktop;
+
+# --- PDFs ---
+application/pdf=librewolf.desktop;nightpdf.desktop;
+
+# --- Images (viewer + editor) ---
+image/png=org.kde.gwenview.desktop;org.gimp.GIMP.desktop;org.nomacs.ImageLounge.desktop
+image/jpeg=org.kde.gwenview.desktop;org.gimp.GIMP.desktop;org.nomacs.ImageLounge.desktop
+image/jpg=org.kde.gwenview.desktop;org.gimp.GIMP.desktop;org.nomacs.ImageLounge.desktop
+image/webp=org.kde.gwenview.desktop;org.gimp.GIMP.desktop;org.nomacs.ImageLounge.desktop
+image/gif=org.kde.gwenview.desktop;org.gimp.GIMP.desktop;org.nomacs.ImageLounge.desktop
+image/tiff=org.kde.gwenview.desktop;org.gimp.GIMP.desktop;org.nomacs.ImageLounge.desktop
+
+# --- Video ---
+video/mp4=vlc.desktop;
+video/x-matroska=vlc.desktop;
+video/webm=vlc.desktop;
+video/quicktime=vlc.desktop;
+
+# --- Audio ---
+audio/mpeg=vlc.desktop;
+audio/flac=vlc.desktop;
+audio/ogg=vlc.desktop;
+audio/wav=vlc.desktop;
+audio/mp4=vlc.desktop;
+
+# --- Archives ---
+application/zip=xarchiver.desktop;
+application/x-zip-compressed=xarchiver.desktop;
+application/x-tar=xarchiver.desktop;
+application/gzip=xarchiver.desktop;
+application/x-7z-compressed=xarchiver.desktop;
+application/vnd.rar=xarchiver.desktop;
+
+# --- Github Desktop ---
+x-scheme-handler/x-github-client=github-desktop.desktop;GitHub Desktop.desktop;
+x-scheme-handler/x-github-desktop-auth=github-desktop.desktop;GitHub Desktop.desktop;
+
